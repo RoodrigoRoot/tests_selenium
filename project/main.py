@@ -1,4 +1,4 @@
-from send import WhatsAppMessages
+from whatsapp import WhatsAppMessages
 from user import UserVerification, UserRegister, User
 
 
