@@ -5,3 +5,4 @@ user = UserRegister.register_user()
 message = UserRegister.get_message_code(user.code)
 
 WhatsappMessages.send_message(user, message)
+UserRegister.verification_code(user.code)

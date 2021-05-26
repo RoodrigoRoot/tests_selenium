@@ -70,4 +70,10 @@ class UserRegister:
         return text
 
 
-
+    @staticmethod
+    def verification_code(user_code):
+        code = int(input("Ingrese el código que le enviamos a Whatsapp> "))
+        if user_code == code:
+            print("Usuario registrado")
+        else:
+            print("No se pudo procesar tu solicitud")
