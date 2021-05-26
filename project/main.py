@@ -1,8 +1,7 @@
-from whatsapp import WhatsAppMessages
-from user import UserVerification, UserRegister, User
-
+from user import UserRegister
+from whatsapp import WhatsappMessages
 
 user = UserRegister.register_user()
-message = UserVerification.get_message_code(user.code)
-print(user.code)
-WhatsAppMessages.send_message(user, message)
+message = UserRegister.get_message_code(user.code)
+
+WhatsappMessages.send_message(user, message)
